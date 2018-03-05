@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(241, 241, 241)!important;
+    color: rgb(158, 157, 157);
+}
+
+#header-contenedor {
+    background-color: rgb(241, 241, 241);
+    color: white;
+}
+
+.etiqueta {
+    background-color: rgba(241, 241, 241, 0);
+}
+
+.btn.btn-programacionxyz {
+    background-color: #FF4081;
+    color: white;
+    margin-left: 5px;
+}
+
+.btn.btn-programacionxyz:hover {
+    background-color: #455a64;
+}
+
+.btn.btn-programacionxyz:active {
+    background-color: #FF4081;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.fondo {
+    background-color: #455a64;
+    color: beige;
+}
+
+.fondo2 {
+    background-color: rgb(241, 241, 241);
+    color: rgb(158, 157, 157);
+}
+
+.fondo3 {
+    background-color: white;
+    color: rgb(158, 157, 157);
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 0rem;
+    background-color: rgb(241, 241, 241);
+    border-radius: .3rem;
+}
+
+
+/*Línea en medio*/
+
+h5 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid rgba(59, 58, 58, 0.288);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+h5 span {
+    background: rgb(241, 241, 241);
+    color: #455a64;
+    padding: 0 10px;
+}
