@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Sistema Facturación</title>
+</head>
+
+<body>
+    <!-- fixed-top -->
+    <header id="header-contenedor">
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md">
+            <span class="navbar-brand">Sistema Facturación</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white">&#9776;</span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Clientes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- container-fluid abarca todo el ancho de la pantalla -->
+    <div class="container-fluid">
+        <br>
+        <br>
+        <div class="row">
+            <!-- Con col-md-10 ofset-md-1  indica que cuando sea mayor a md, ponga 10 columnas y un espacio a la izquierda-->
+            <div class="col-12 col-md-10 offset-md-1">
+                <div class="table-header text-center text-uppercase">
+                    <hr>Busqueda de usuarios</div>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <!-- md o superior 10 columnas con offset de 1. Extra small o menores a md 12 columnas -->
+            <div class="col-12 col-md-10 offset-md-1">
+                <div class="row">
+                    <!-- Extra small de 12 columnas, md o superiores solo tomará 2 columnas  -->
+                    <div class="col-12 col-md-2">
+                        <label><strong>Nombre</strong></label>
+                    </div>
+                    <!-- Extra small de 12 columnas, md o superiores solo tomará 6 columnas  -->
+                    <div class="col-12 col-md-6">
+                        <input type="text" id="cliente" name="cliente" class="form-control" value="" maxlength="100">
+                    </div>
+                    <!-- Extra small de 12 columnas, y contenido se coloca al final, md o superior a 4 columnas y contenido al inicio  -->
+                    <div class="col-12 col-md-4 d-flex justify-content-end justify-content-md-start mt-1 mt-md-0">
+                        <button id="btnBuscar" name="btnBuscar" class="btn btn-info ">Buscar</button>
+                        <button id="btnNuevo" name="btnNuevo" class="btn btn-primary ml-1">Nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <!-- En extra small de 12 columnas, en md en detalle de 10 columnas -->
+            <div class="col-12 col-md-10 offset-md-1">
+                <!-- Clases table y table-tripped para mejorar experiencia de la tabla -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <!-- Oculta en extra-small, en md en adelante se muestra -->
+                            <th class="d-none d-md-table-cell">#</th>
+                            <!-- Cuando tenga tamaño grande muestra nombre y apellidos -->
+                            <th class="d-none d-md-table-cell">Nombre</th>
+                            <th class="d-none d-md-table-cell">Apellidos</th>
+                            <!-- Se muestra en extra small y se oculta en md en adelante -->
+                            <th class="d-table-cell d-md-none">Nombre Completo</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usuarios-table-body">
+                        <tr>
+                            <td class="d-none d-md-table-cell"></td>
+                            <!-- cuando tenga tamaño grande muestra nombre y apellidos -->
+                            <td class="d-none d-md-table-cell"></td>
+                            <td class="d-none d-md-table-cell"></td>
+                            <!-- Cuando tenga tamaño chico oculta las 2 anteriores y muestra el nombre completo -->
+                            <td class="d-table-cell d-md-none"></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- /Menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- EJECUTA API -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
