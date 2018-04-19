@@ -1,0 +1,12 @@
+{
+
+    "articulos" : [
+        {
+            "id" : 1,
+            "titulo" : "Programacion con Xamarin iOS",
+            "autor" : "Enrique Aguilar",
+            "contenido" : "En Xamarin Studio podemos .... "
+        }
+    ]
+    
+}

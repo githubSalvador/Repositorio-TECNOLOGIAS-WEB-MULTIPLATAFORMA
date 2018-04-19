@@ -1,0 +1,45 @@
+
+1) COMPONENTS
+
+COSTRUCCION 
+
+- Constructor 
+
+MONTADO 
+
+- componentWillMount 
+
+- render 
+
+- componentDidMount 
+   
+ACTUALIZACION 
+
+- componentWillReceiveProps
+  
+- shouldComponentUpdate 
+  
+- re render ( llamada al metodo render ) 
+  
+2) COMPONENTES FUNCIONALES 
+
+  function Lista(props){
+      return(
+          <div>
+          </div>
+      );
+  }
+
+3) PURE COMPONENT 
+
+
+
+
+
+
+
+
+
+
+
+
